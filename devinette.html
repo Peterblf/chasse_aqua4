@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Étape 4 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="logo"> <!-- Remplacez "votre-logo.png" par le chemin de votre logo -->
+    </div>
+
+    <div class="container">
+        <h1>Étape 4 </h1>
+
+            <h2>Derniere Devinette ! </h2>
+            <p>Quelle est la date de sortie du premier film western ?</p>
+            <p>Retenez bien le code, c'est celui d'un cadenas qui se trouve au campement des <strong>OUTLAWS</strong> à République ! </p>
+
+        <input type="text" id="reponse" placeholder="Entrez votre réponse" required >
+        <button id="valider">Valider</button>
+        <div id="indice"></div>
+    </div>
+
+    <script>        
+        document.getElementById("valider").addEventListener("click", function() {
+            let reponse = document.getElementById("reponse").value.toLowerCase();
+            if (reponse === "1903") { 
+                window.location.href = "bravo5.html";
+            } else {
+                alert("Mauvaise réponse, essayez encore !");
+            }
+        });
+    </script>
+</body>
+</html>
